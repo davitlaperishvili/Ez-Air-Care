@@ -1,11 +1,18 @@
 section.about_us{
     margin-bottom: 180px;
+    @media(max-width: 1024px){
+        margin-bottom: 80px;
+    }
     .container{
         display: grid;
         grid-gap: 70px;
         grid-template-columns: 1fr 1fr;
         align-items: end;
         position: static;
+        @media(max-width: 1024px){
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+        }
         figure{
             position: static;
             &::before{

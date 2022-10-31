@@ -75,6 +75,9 @@
 						<span><?php echo $phoneVisible ?></span>
 					</a>
 				</div>
+				<div class="theme_button green">
+					<a href="#">Book an appointment</a>
+				</div>
 			</div>
 		</div>
 	</div>

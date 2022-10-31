@@ -1,10 +1,17 @@
 section.banner{
     margin-bottom: 165px;
+    @media(max-width: 1024px){
+        margin-bottom: 80px;
+    }
     .container{
         display: grid;
         grid-gap: 80px;
         grid-template-columns: 1fr 1fr;
         background-color: $cread;
+        @media(max-width: 1024px){
+            grid-gap: 30px;
+            grid-template-columns: 1fr;
+        }
     }
     .section_content{
         padding: 70px 0 70px 60px;
@@ -12,6 +19,9 @@ section.banner{
             display: flex;
             justify-content: space-between;
             margin-bottom: 40px;
+            @media(max-width: 1024px){
+                flex-direction: column;
+            }
             .stat_item{
                 .value{
                     margin-bottom: 5px;

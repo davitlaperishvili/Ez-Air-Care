@@ -1,0 +1,55 @@
+header{
+    .header_top{
+        background-color: $cread;
+        padding: 10px 0;
+        @media(max-width: 1024px){
+            display: none;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .list{
+                display: flex;
+                align-items: center;
+                .item{
+                    margin-right: 30px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .header_bottom{
+        padding: 20px 0;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media(max-width: 1024px){
+                justify-content: center;
+            }
+            .logo{
+                a{
+                    img{
+                        @media(max-width: 1024px){
+                            width: 180px;
+                        }
+                        
+                    }
+                }
+            }
+            .haeder_right{
+                display: flex;
+                align-items: center;
+                @media(max-width: 1024px){
+                    display: none;
+                }
+                .header_phone{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

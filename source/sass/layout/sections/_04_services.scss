@@ -2,10 +2,17 @@ section.services{
     margin-bottom: 180px;
     padding: 180px 0;
     background-color: $cread;
+    @media(max-width: 1024px){
+        margin-bottom: 80px;
+    }
     .services_list{
         display: grid;
         grid-gap: 50px 36px;
         grid-template-columns: repeat(3, 1fr);
+        @media(max-width: 1024px){
+            grid-gap: 25px;
+            grid-template-columns: 1fr;
+        }
         .service_item{
             padding: 45px;
             border-radius: 14px;

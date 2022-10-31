@@ -22,13 +22,13 @@
                     <ul>
                         <li>
                             <a href="tel:<?php echo $phone ?>">
-                                <img src="" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/call.png" alt="">
                                 <?php echo $phoneVisible ?>
                             </a>
                         </li>
                         <li>
                             <a href="mailto:<?php echo $email ?>">
-                                <img src="" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/mail.png" alt="">
                                 <?php echo $email ?>
                             </a>
                         </li>
@@ -50,11 +50,25 @@
                 <div class="footer_desc"><?php echo $footer_desc ?></div>
                 <div class="footer_contact_form">
                     <?php echo do_shortcode($footer_contact_form) ?>
+                    <div class="form_wrap">
+                        <div class="form_title">Contact us</div>
+                        <div class="form_items">
+                            <div class="form_item">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="form_item">
+                                <input type="text" placeholder="Phone">
+                            </div>
+                            <div class="fomr_submit form_item">
+                                <button type="submit" class="gilaki">Send</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="rights"><?php echo $footer_rights ?></div>
     </div>
+    <div class="rights"><?php echo $footer_rights ?></div>
 </footer>
 
 <?php wp_footer(); ?>

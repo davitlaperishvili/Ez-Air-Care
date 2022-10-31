@@ -21,6 +21,20 @@ export default function plugindParameters() {
 		pagination: {
 			el: ".swiper-pagination",
 		},
+		breakpoints: {
+			355: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 40,
+			},
+		},
 	});
 	// Gallery
 	$(".magnific").each(function () {

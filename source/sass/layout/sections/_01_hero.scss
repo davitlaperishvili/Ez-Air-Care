@@ -1,7 +1,7 @@
 section.hero{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 250px;
     figure{
         position: absolute;
         top: 0;
@@ -17,23 +17,109 @@ section.hero{
     .container{
         .hero_wrap{
             padding: 200px 0;
+            @media(max-width: 1024px){
+                padding: 50px 0 20px;
+            }
             .hero_content{
                 .hero_left{
-                    .page_title{
-                        margin-bottom: 30px;
-                        font-size: 56px;
-                    }
-                    .hero_text{
-                        font-size: 20px;
+                    .hero_content_text{
+                        @media(max-width: 1024px){
+                            background-color: rgba($cwhite, 0.75);
+                            padding: 30px 20px;
+                            border-radius: 15px;
+                        }
+                        .page_title{
+                            margin-bottom: 30px;
+                            font-size: 56px;
+                            @media(max-width: 1024px){
+                                font-size: 22px;
+                            }
+                        }
+                        .hero_text{
+                            font-size: 20px;
+                            @media(max-width: 1024px){
+                                font-size: 14px;
+                            }
+                        }
                     }
                     .section_buttons{
                         margin-top: 40px;
+                        @media(max-width: 1024px){
+                            margin-top: 20px;
+                        }
                         .theme_button{
-    
+                            a{
+                                @media(max-width: 1024px){
+                                    width: 200px;
+                                }
+                            }
                         }
                     }
                 }
             }
+        }
+    }
+}
+.hero_benefits{
+    transform: translateY(-50%);
+    @media(max-width: 1024px){
+        transform: translateY(0);
+        margin-bottom: 80px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        padding: 40px 50px;
+        border-radius: 15px;
+        background-color: $ccorp;
+        color: $cwhite;
+        @media(max-width: 1024px){
+            flex-direction: column;
+            width: 100%;
+            border-radius: 0;
+            margin: 0;
+        }
+    }
+    .hero_benefit{
+        flex: 1;
+        margin-right: 70px;
+        padding-right: 70px;
+        border-right: 1px solid $cwhite;
+        @media(max-width: 1024px){
+            margin-right: 0;
+            padding-right: 0;
+            border-right: none;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $cwhite;
+        }
+        &:last-child{
+            margin-right: 0;
+            padding-right: 0;
+            border-right: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .benefit_header{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            img{
+                margin-right: 20px;
+                @media(max-width: 1024px){
+                    margin-right: 10px;
+                }
+            }
+            span{
+                font-size: 24px;
+                @media(max-width: 1024px){
+                    font-size: 18px;
+                }
+            }
+        }
+        .benefit_text{
+
         }
     }
 }
