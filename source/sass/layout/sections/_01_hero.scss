@@ -1,0 +1,39 @@
+section.hero{
+    display: flex;
+    align-items: center;
+    margin-bottom: 250px;
+    figure{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .container{
+        .hero_wrap{
+            padding: 200px 0;
+            .hero_content{
+                .hero_left{
+                    .page_title{
+                        margin-bottom: 30px;
+                        font-size: 56px;
+                    }
+                    .hero_text{
+                        font-size: 20px;
+                    }
+                    .section_buttons{
+                        margin-top: 40px;
+                        .theme_button{
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

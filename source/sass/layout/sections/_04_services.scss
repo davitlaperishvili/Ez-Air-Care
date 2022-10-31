@@ -1,0 +1,57 @@
+section.services{
+    margin-bottom: 180px;
+    padding: 180px 0;
+    background-color: $cread;
+    .services_list{
+        display: grid;
+        grid-gap: 50px 36px;
+        grid-template-columns: repeat(3, 1fr);
+        .service_item{
+            padding: 45px;
+            border-radius: 14px;
+            background-color: $cwhite;
+            .service_content{
+                .service_header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-bottom: 20px;
+                    img{
+                        margin-right: 10px;
+                        max-width: 35px;
+                    }
+                    .service_title{
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .service_contact{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                pointer-events: none;
+                .theme_button{
+
+                }
+            }
+            &:hover{
+                background-color: $ccorp;
+                .service_content{
+                    opacity: 0.5;
+                    color: $cwhite;
+                }
+                .service_contact{
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            }
+        }
+    }
+}

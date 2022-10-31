@@ -7,7 +7,7 @@
     
     <section class="special_offers" id="content<?php echo $rowIndex ?>">
         <div class="container">
-            <h2 class="sectoin_title"><?php echo $section_title  ?></h2>
+            <h2 class="section_title"><?php echo $section_title  ?></h2>
             <div class="offers_list">
                 <?php 
                     foreach($offers_list as $offer) {
@@ -24,7 +24,7 @@
                         } else {
                             ?>
                                 <div class="offer_card plan">
-                                    <div class="plan_price"><?php echo $offer['plan_price'] ?> / month</div>
+                                    <div class="plan_price"><span><?php echo $offer['plan_price'] ?></span> / month</div>
                                     <div class="plan_title"><?php echo $offer['plan_title'] ?></div>
                                     <div class="plan_desc">
                                         <?php echo $offer['plan_desc'] ?>

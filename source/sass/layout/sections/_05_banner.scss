@@ -1,0 +1,38 @@
+section.banner{
+    margin-bottom: 165px;
+    .container{
+        display: grid;
+        grid-gap: 80px;
+        grid-template-columns: 1fr 1fr;
+        background-color: $cread;
+    }
+    .section_content{
+        padding: 70px 0 70px 60px;
+        .section_stats{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            .stat_item{
+                .value{
+                    margin-bottom: 5px;
+                    font-size: 54px;
+                    color: $ccorp;
+                    font-weight: 700;
+                }
+                .title{
+                    font-size: 20px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    figure{
+        width: 100%;
+        height: 100%;
+        img{    
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

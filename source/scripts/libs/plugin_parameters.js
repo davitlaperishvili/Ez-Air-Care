@@ -12,8 +12,12 @@ export default function plugindParameters() {
 		});
 	});
 	// Slider
-	let mySwiper = new Swiper(".mySwiper", {
-		slidesPerView: 1,
+	let mySwiper = new Swiper(".testimonials_slider", {
+		slidesPerView: 3,
+		// autoplay: {
+		// 	delay: 3000,
+		// },
+		spaceBetween: 40,
 		pagination: {
 			el: ".swiper-pagination",
 		},

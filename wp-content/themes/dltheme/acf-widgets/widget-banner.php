@@ -26,7 +26,7 @@
                         }
                     ?>
                 </div>
-                <div class="theme_button">
+                <div class="theme_button green">
                     <a href="<?php echo $section_button_url ?>"><?php echo $section_button_text ?></a>
                 </div>
             </div>

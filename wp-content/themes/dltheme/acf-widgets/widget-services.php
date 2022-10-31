@@ -5,8 +5,9 @@
         $rowIndex = get_row_index();
     ?>
     
-    <section class="about_us" id="content<?php echo $rowIndex ?>">
+    <section class="services" id="content<?php echo $rowIndex ?>">
         <div class="container">
+            <h2 class="section_title center"><?php echo $section_title ?></h2>
             <div class="services_list">
                 <?php 
                     foreach ($services_list as $service) {
@@ -20,7 +21,7 @@
                                     <div class="service_text"><?php echo $service['service_text'] ?></div>
                                 </div>
                                 <div class="service_contact">
-                                    <div class="theme_button">
+                                    <div class="theme_button white">
                                         <a href="<?php echo $service['service_button_url'] ?>"><?php echo $service['service_button_text'] ?></a>
                                     </div>
                                 </div>

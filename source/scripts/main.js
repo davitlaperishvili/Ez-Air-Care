@@ -14,7 +14,7 @@ import plugindParameters from "./libs/plugin_parameters.js";
 $(window).on("load", function () {
 	//formFunctions();
 	//additionalFunctions();
-	//plugindParameters();
+	plugindParameters();
 	hamburderMenu();
 	console.log("ready");
 });

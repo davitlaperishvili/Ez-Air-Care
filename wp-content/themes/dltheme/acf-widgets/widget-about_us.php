@@ -16,7 +16,7 @@
             <div class="section_content">
                 <h2 class="section_title"><?php echo $section_title  ?></h2>
                 <div class="section_text"><?php echo $section_text  ?></div>
-                <div class="theme_button">
+                <div class="theme_button green">
                     <a href="<?php echo $section_button_url ?>"><?php echo $section_button_text ?></a>
                 </div>
             </div>

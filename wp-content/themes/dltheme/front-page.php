@@ -29,8 +29,8 @@
                 elseif( get_row_layout() == 'testimonials' ):
                     include(TEMPLATEPATH.'/acf-widgets/widget-testimonials.php');
                 
-                elseif( get_row_layout() == 'contacts' ):
-                    include(TEMPLATEPATH.'/acf-widgets/widget-contacts.php');
+                elseif( get_row_layout() == 'contact' ):
+                    include(TEMPLATEPATH.'/acf-widgets/widget-contact.php');
 
                 endif;
             endwhile;
